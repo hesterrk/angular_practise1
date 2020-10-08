@@ -23,3 +23,25 @@
   <strong> You said: </strong> {{ name }}
 
 </div>
+
+
+<!-- //ngTemplate custom element 
+    If this expression: clickCounter > 4 resolves to true:
+        will show whatever elements are inside this ng-template tag and if false => will show the ng-template #none tag
+
+-->
+<div class="about-container">
+  <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
+
+    <p> The click counter <strong>is GREATER </strong>than 4</p>
+  </ng-template>
+
+
+  <!-- // in reference to above's none -->
+  <ng-template #none>
+    <p> The click counter is <strong>not greater </strong>than 4</p>
+
+  </ng-template>
+
+
+</div>
