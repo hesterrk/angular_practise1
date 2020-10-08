@@ -1,1 +1,16 @@
-<p>about works!</p>
+<h1> Breweries </h1>
+
+<!-- // star => add or remove a single html element
+// We want to say if brews exists it will show this ul element -->
+<ul *ngIf="brews">
+  <!-- // allows us to iterate through data -->
+  <li *ngFor="let brew of brews">
+    <p class="name">{{brew.name}}</p>
+    <p class="country">{{brew.country}}</p>
+    <a href="{{brew.website_url}}" class="site">Site</a>
+
+
+  </li>
+
+
+</ul>
