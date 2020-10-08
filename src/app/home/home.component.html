@@ -28,9 +28,11 @@
 <!-- //ngTemplate custom element 
     If this expression: clickCounter > 4 resolves to true:
         will show whatever elements are inside this ng-template tag and if false => will show the ng-template #none tag
+    
+    Style&property binding => [style.nameOfCssProperty] => bind this to an expression of some sort 
 
 -->
-<div class="about-container">
+<div class="about-container" [style.background-color]="clickCounter > 4 ? 'lavender' : 'lightgray'">
   <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
 
     <p> The click counter <strong>is GREATER </strong>than 4</p>
