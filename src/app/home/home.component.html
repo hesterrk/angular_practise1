@@ -11,3 +11,15 @@
   <p> You Click <span (click)="counterClick()">this</span>{{clickCounter}} times </p>
 
 </div>
+
+<!-- // ngModel allows for 2 way data binding 
+    1. The input property will RECIEVE and SEND info from and too the home.component.ts 
+
+-->
+
+<div class="about-container">
+  <input type="text" [(ngModel)]="name">
+  <br>
+  <strong> You said: </strong> {{ name }}
+
+</div>
