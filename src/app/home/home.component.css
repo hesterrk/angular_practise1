@@ -1,0 +1,21 @@
+span {
+  font-weight: bold;
+  padding: .3em .8em;
+  user-select: none;
+  background: lightcoral;
+  cursor: pointer;
+}
+
+.about-container {
+  padding: 3em;
+  border: 1px solid lightblue;
+  margin-bottom: 1em;
+
+}
+
+
+.about-container,
+input {
+  padding: 1em;
+  margin-bottom: 2em;
+}
