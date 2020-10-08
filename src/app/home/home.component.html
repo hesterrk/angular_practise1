@@ -32,10 +32,7 @@
     Style&property binding => [style.nameOfCssProperty] => bind this to an expression of some sort 
 
 -->
-<div class="about-container" [ngStyle]="{
-    'background-color': clickCounter > 4 ? 'lavender' : 'lightgrey',
-    'border': clickCounter > 4 ? '4px solid black' : 'none'
-}">
+<div class="about-container" [class.active]="clickCounter > 4">
   <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
 
     <p> The click counter <strong>is GREATER </strong>than 4</p>
